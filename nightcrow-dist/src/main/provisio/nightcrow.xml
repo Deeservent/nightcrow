@@ -1,0 +1,19 @@
+<runtime>
+
+    <artifactSet to="/lib">
+        <exclusion>org.slf4j:slf4j-log4j12</exclusion>
+        <exclusion>org.slf4j:slf4j-api</exclusion>
+        <exclusion>ch.qos.logback:logback-classic</exclusion>
+    </artifactSet>
+    <!-- Target -->
+    <archive name="${project.artifactId}-${project.version}.tar.gz" hardLinkIncludes="**/*.jar"/>
+    <!-- Notices -->
+    <fileSet to="/">
+        <directory path="${basedir}/../">
+            <include>DISCLAIMER</include>
+            <include>install.sh</include>
+            <include>LICENSE</include>
+            <include>NOTICE</include>
+        </directory>
+    </fileSet>
+</runtime>

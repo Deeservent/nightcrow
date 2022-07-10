@@ -1,0 +1,830 @@
+2022-07-10 17:42:15.472 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+2022-07-10 17:42:15.483 [main] INFO  indi.deeservent.nightcrow.api.ServerApplication - Starting ServerApplication using Java 1.8.0_321 on DeeserventMacBook-Pro.local with PID 72778 (/Users/deeservent/dev/dzw_work/nightcrow/nightcrow-api/target/classes started by deeservent in /Users/deeservent/dev/dzw_work/nightcrow)
+2022-07-10 17:42:15.483 [main] INFO  indi.deeservent.nightcrow.api.ServerApplication - The following profiles are active: prod
+2022-07-10 17:42:16.556 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-07-10 17:42:16.558 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-07-10 17:42:16.605 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 38 ms. Found 0 Redis repository interfaces.
+2022-07-10 17:42:17.059 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@3069a360' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-10 17:42:17.064 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-10 17:42:17.384 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-07-10 17:42:17.391 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-07-10 17:42:17.392 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-07-10 17:42:17.392 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+2022-07-10 17:42:17.459 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/nightcrow] - Initializing Spring embedded WebApplicationContext
+2022-07-10 17:42:17.460 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1924 ms
+2022-07-10 17:42:17.856 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2022-07-10 17:42:18.493 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2022-07-10 17:42:19.804 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/**', OPTIONS] with []
+2022-07-10 17:42:19.844 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Or [Ant [pattern='/sys/oauth/token'], Ant [pattern='/oauth/token_key'], Ant [pattern='/oauth/check_token']] with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@65930e02, org.springframework.security.web.context.SecurityContextPersistenceFilter@55b45ea1, org.springframework.security.web.header.HeaderWriterFilter@776d8097, org.springframework.security.web.authentication.logout.LogoutFilter@77f529a6, org.springframework.security.oauth2.provider.client.ClientCredentialsTokenEndpointFilter@644e6a8e, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@72a0a60d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@45f95ac0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@52035328, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@85c3522, org.springframework.security.web.session.SessionManagementFilter@b787274, org.springframework.security.web.access.ExceptionTranslationFilter@33e4068, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7097d921]
+2022-07-10 17:42:19.851 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure org.springframework.security.oauth2.config.annotation.web.configuration.ResourceServerConfiguration$NotOAuthRequestMatcher@146db8a6 with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2a20da9f, org.springframework.security.web.context.SecurityContextPersistenceFilter@2f3a8166, org.springframework.security.web.header.HeaderWriterFilter@3b4f1eb, org.springframework.security.web.authentication.logout.LogoutFilter@79e16dd9, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@2ae5580, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7aab98b6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5e3405a1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@40c0437f, org.springframework.security.web.session.SessionManagementFilter@6247c08c, org.springframework.security.web.access.ExceptionTranslationFilter@48c3a0ef, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7cd8831c]
+2022-07-10 17:42:19.856 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@fe156f4, org.springframework.security.web.context.SecurityContextPersistenceFilter@3fc5d397, org.springframework.security.web.header.HeaderWriterFilter@3ae91ab3, org.springframework.security.web.authentication.logout.LogoutFilter@bb21063, indi.deeservent.nightcrow.api.security.filter.ValidateCodeFilter@7ea71fc2, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6821c63c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@25c8c71e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@57867d96, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@79b4cff, org.springframework.security.web.session.SessionManagementFilter@16cb6f51, org.springframework.security.web.access.ExceptionTranslationFilter@1f70bce5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4d770bcd]
+2022-07-10 17:42:21.234 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-07-10 17:42:21.258 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/nightcrow'
+2022-07-10 17:42:21.272 [main] INFO  indi.deeservent.nightcrow.api.ServerApplication - Started ServerApplication in 6.268 seconds (JVM running for 6.946)
+2022-07-10 17:42:47.575 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2022-07-10 17:42:47.583 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2022-07-10 17:45:13.624 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+2022-07-10 17:45:13.647 [main] INFO  indi.deeservent.nightcrow.api.ServerApplication - Starting ServerApplication using Java 1.8.0_321 on DeeserventMacBook-Pro.local with PID 73038 (/Users/deeservent/dev/dzw_work/nightcrow/nightcrow-api/target/classes started by deeservent in /Users/deeservent/dev/dzw_work/nightcrow)
+2022-07-10 17:45:13.648 [main] INFO  indi.deeservent.nightcrow.api.ServerApplication - The following profiles are active: prod
+2022-07-10 17:45:14.724 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-07-10 17:45:14.728 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-07-10 17:45:14.774 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 37 ms. Found 0 Redis repository interfaces.
+2022-07-10 17:45:15.224 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@430b2699' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-10 17:45:15.229 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-10 17:45:15.548 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-07-10 17:45:15.557 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-07-10 17:45:15.558 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-07-10 17:45:15.560 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+2022-07-10 17:45:15.619 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/nightcrow] - Initializing Spring embedded WebApplicationContext
+2022-07-10 17:45:15.619 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1906 ms
+2022-07-10 17:45:16.044 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2022-07-10 17:45:16.663 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2022-07-10 17:45:17.992 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/**', OPTIONS] with []
+2022-07-10 17:45:18.027 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Or [Ant [pattern='/sys/oauth/token'], Ant [pattern='/oauth/token_key'], Ant [pattern='/oauth/check_token']] with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@215a329c, org.springframework.security.web.context.SecurityContextPersistenceFilter@7de2bdc7, org.springframework.security.web.header.HeaderWriterFilter@6c9e74f3, org.springframework.security.web.authentication.logout.LogoutFilter@9499643, org.springframework.security.oauth2.provider.client.ClientCredentialsTokenEndpointFilter@4c418496, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@22f046b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3c116f26, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5bdb6ea8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@20723ee, org.springframework.security.web.session.SessionManagementFilter@5030997b, org.springframework.security.web.access.ExceptionTranslationFilter@1ab85862, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2de7fe0e]
+2022-07-10 17:45:18.036 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure org.springframework.security.oauth2.config.annotation.web.configuration.ResourceServerConfiguration$NotOAuthRequestMatcher@fe13916 with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5ea0a7a9, org.springframework.security.web.context.SecurityContextPersistenceFilter@4153a832, org.springframework.security.web.header.HeaderWriterFilter@3a917017, org.springframework.security.web.authentication.logout.LogoutFilter@30ed4034, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@6247c08c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4a2dbcfc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7b8d6c66, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@278c998, org.springframework.security.web.session.SessionManagementFilter@1ed12d10, org.springframework.security.web.access.ExceptionTranslationFilter@637d111d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6949cead]
+2022-07-10 17:45:18.041 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@53ddabc6, org.springframework.security.web.context.SecurityContextPersistenceFilter@4203529f, org.springframework.security.web.header.HeaderWriterFilter@6b278b17, org.springframework.security.web.authentication.logout.LogoutFilter@217fd3c, indi.deeservent.nightcrow.api.security.filter.ValidateCodeFilter@5866731, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@69ac5752, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7d82ca56, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2aaa89c2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@39ac8c0c, org.springframework.security.web.session.SessionManagementFilter@2ae5580, org.springframework.security.web.access.ExceptionTranslationFilter@470f0637, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1b5f960a]
+2022-07-10 17:45:19.519 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-07-10 17:45:19.542 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/nightcrow'
+2022-07-10 17:45:19.571 [main] INFO  indi.deeservent.nightcrow.api.ServerApplication - Started ServerApplication in 6.483 seconds (JVM running for 7.35)
+2022-07-10 17:45:32.155 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/nightcrow] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-10 17:45:32.156 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-07-10 17:45:32.159 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2022-07-10 17:47:38.071 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2022-07-10 17:47:38.083 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2022-07-10 17:47:45.529 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+2022-07-10 17:47:45.545 [main] INFO  indi.deeservent.nightcrow.api.ServerApplication - Starting ServerApplication using Java 1.8.0_321 on DeeserventMacBook-Pro.local with PID 73224 (/Users/deeservent/dev/dzw_work/nightcrow/nightcrow-api/target/classes started by deeservent in /Users/deeservent/dev/dzw_work/nightcrow)
+2022-07-10 17:47:45.546 [main] INFO  indi.deeservent.nightcrow.api.ServerApplication - The following profiles are active: prod
+2022-07-10 17:47:46.598 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-07-10 17:47:46.602 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-07-10 17:47:46.649 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 38 ms. Found 0 Redis repository interfaces.
+2022-07-10 17:47:47.096 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@d16be4f' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-10 17:47:47.102 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-10 17:47:47.422 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-07-10 17:47:47.430 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-07-10 17:47:47.431 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-07-10 17:47:47.431 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+2022-07-10 17:47:47.494 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/nightcrow] - Initializing Spring embedded WebApplicationContext
+2022-07-10 17:47:47.496 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1903 ms
+2022-07-10 17:47:47.890 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2022-07-10 17:47:48.535 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2022-07-10 17:47:49.806 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/**', OPTIONS] with []
+2022-07-10 17:47:49.841 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Or [Ant [pattern='/sys/oauth/token'], Ant [pattern='/oauth/token_key'], Ant [pattern='/oauth/check_token']] with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@127d2aee, org.springframework.security.web.context.SecurityContextPersistenceFilter@6f976c, org.springframework.security.web.header.HeaderWriterFilter@3dee3a6c, org.springframework.security.web.authentication.logout.LogoutFilter@5981f2c6, org.springframework.security.oauth2.provider.client.ClientCredentialsTokenEndpointFilter@59b1edab, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1253b822, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3cc6f036, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5a6af2c4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3cc2e3e, org.springframework.security.web.session.SessionManagementFilter@6109d880, org.springframework.security.web.access.ExceptionTranslationFilter@28d56028, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1554eaa4]
+2022-07-10 17:47:49.849 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure org.springframework.security.oauth2.config.annotation.web.configuration.ResourceServerConfiguration$NotOAuthRequestMatcher@113c4ad6 with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7be859de, org.springframework.security.web.context.SecurityContextPersistenceFilter@7a34505a, org.springframework.security.web.header.HeaderWriterFilter@9499643, org.springframework.security.web.authentication.logout.LogoutFilter@d5a72cd, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@7d47b021, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@b787274, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4ec616d6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@40fcaae7, org.springframework.security.web.session.SessionManagementFilter@776d8097, org.springframework.security.web.access.ExceptionTranslationFilter@33e4068, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@c7673ae]
+2022-07-10 17:47:49.854 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1fd0ae78, org.springframework.security.web.context.SecurityContextPersistenceFilter@69d902f9, org.springframework.security.web.header.HeaderWriterFilter@684a802a, org.springframework.security.web.authentication.logout.LogoutFilter@22f046b, indi.deeservent.nightcrow.api.security.filter.ValidateCodeFilter@16e1219f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@215a329c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@547052, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3ca3eba2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@583030bd, org.springframework.security.web.session.SessionManagementFilter@7b5c9412, org.springframework.security.web.access.ExceptionTranslationFilter@2ff8d39b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@102ecb61]
+2022-07-10 17:47:51.263 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-07-10 17:47:51.288 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/nightcrow'
+2022-07-10 17:47:51.302 [main] INFO  indi.deeservent.nightcrow.api.ServerApplication - Started ServerApplication in 6.288 seconds (JVM running for 6.919)
+2022-07-10 17:48:04.778 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/nightcrow] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-10 17:48:04.779 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-07-10 17:48:04.782 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2022-07-10 17:50:17.382 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2022-07-10 17:50:17.394 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2022-07-10 17:50:36.910 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+2022-07-10 17:50:36.923 [main] INFO  indi.deeservent.nightcrow.api.ServerApplication - Starting ServerApplication using Java 1.8.0_321 on DeeserventMacBook-Pro.local with PID 73461 (/Users/deeservent/dev/dzw_work/nightcrow/nightcrow-api/target/classes started by deeservent in /Users/deeservent/dev/dzw_work/nightcrow)
+2022-07-10 17:50:36.924 [main] INFO  indi.deeservent.nightcrow.api.ServerApplication - The following profiles are active: prod
+2022-07-10 17:50:37.993 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-07-10 17:50:37.997 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-07-10 17:50:38.045 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 40 ms. Found 0 Redis repository interfaces.
+2022-07-10 17:50:38.490 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@29ebbdf4' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-10 17:50:38.496 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-10 17:50:38.813 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-07-10 17:50:38.820 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-07-10 17:50:38.821 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-07-10 17:50:38.821 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+2022-07-10 17:50:38.881 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/nightcrow] - Initializing Spring embedded WebApplicationContext
+2022-07-10 17:50:38.883 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1911 ms
+2022-07-10 17:50:39.270 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2022-07-10 17:50:39.907 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2022-07-10 17:50:41.198 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/**', OPTIONS] with []
+2022-07-10 17:50:41.235 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Or [Ant [pattern='/sys/oauth/token'], Ant [pattern='/oauth/token_key'], Ant [pattern='/oauth/check_token']] with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@560d6d2, org.springframework.security.web.context.SecurityContextPersistenceFilter@13c18bba, org.springframework.security.web.header.HeaderWriterFilter@3458dab6, org.springframework.security.web.authentication.logout.LogoutFilter@4f563f96, org.springframework.security.oauth2.provider.client.ClientCredentialsTokenEndpointFilter@38394dc3, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@50c2ef56, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@56f61d74, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@81a8898, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3514237f, org.springframework.security.web.session.SessionManagementFilter@59278072, org.springframework.security.web.access.ExceptionTranslationFilter@7d80e1b3, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5ebf776c]
+2022-07-10 17:50:41.245 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure org.springframework.security.oauth2.config.annotation.web.configuration.ResourceServerConfiguration$NotOAuthRequestMatcher@701c482e with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4738131e, org.springframework.security.web.context.SecurityContextPersistenceFilter@5ebe903a, org.springframework.security.web.header.HeaderWriterFilter@720ffab4, org.springframework.security.web.authentication.logout.LogoutFilter@62808e9e, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@25bc65ab, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7c88d04f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@71df5f30, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3b576ee3, org.springframework.security.web.session.SessionManagementFilter@2e62e227, org.springframework.security.web.access.ExceptionTranslationFilter@5fafa76d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1dcad16f]
+2022-07-10 17:50:41.253 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1174676f, org.springframework.security.web.context.SecurityContextPersistenceFilter@1a77eb6, org.springframework.security.web.header.HeaderWriterFilter@44392e64, org.springframework.security.web.authentication.logout.LogoutFilter@2db3675a, indi.deeservent.nightcrow.api.security.filter.ValidateCodeFilter@74f280bd, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@306c9b2c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@52d9f36b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5f9ebd5a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@71f8ce0e, org.springframework.security.web.session.SessionManagementFilter@e18d2a2, org.springframework.security.web.access.ExceptionTranslationFilter@c6bf8d9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3e2d65e1]
+2022-07-10 17:50:42.705 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-07-10 17:50:42.729 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/nightcrow'
+2022-07-10 17:50:42.743 [main] INFO  indi.deeservent.nightcrow.api.ServerApplication - Started ServerApplication in 6.309 seconds (JVM running for 7.002)
+2022-07-10 17:50:48.968 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/nightcrow] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-10 17:50:48.970 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-07-10 17:50:48.973 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2022-07-10 17:53:19.084 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2022-07-10 17:53:19.097 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2022-07-10 17:53:42.436 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+2022-07-10 17:53:42.453 [main] INFO  indi.deeservent.nightcrow.api.ServerApplication - Starting ServerApplication using Java 1.8.0_321 on DeeserventMacBook-Pro.local with PID 73705 (/Users/deeservent/dev/dzw_work/nightcrow/nightcrow-api/target/classes started by deeservent in /Users/deeservent/dev/dzw_work/nightcrow)
+2022-07-10 17:53:42.454 [main] INFO  indi.deeservent.nightcrow.api.ServerApplication - The following profiles are active: prod
+2022-07-10 17:53:43.605 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-07-10 17:53:43.609 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-07-10 17:53:43.660 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 42 ms. Found 0 Redis repository interfaces.
+2022-07-10 17:53:44.128 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@430b2699' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-10 17:53:44.134 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-10 17:53:44.446 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-07-10 17:53:44.453 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-07-10 17:53:44.454 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-07-10 17:53:44.454 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+2022-07-10 17:53:44.512 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/nightcrow] - Initializing Spring embedded WebApplicationContext
+2022-07-10 17:53:44.514 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1981 ms
+2022-07-10 17:53:44.922 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2022-07-10 17:53:45.546 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2022-07-10 17:53:46.826 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/**', OPTIONS] with []
+2022-07-10 17:53:46.860 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Or [Ant [pattern='/sys/oauth/token'], Ant [pattern='/oauth/token_key'], Ant [pattern='/oauth/check_token']] with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@637d111d, org.springframework.security.web.context.SecurityContextPersistenceFilter@3e55eeb9, org.springframework.security.web.header.HeaderWriterFilter@5030997b, org.springframework.security.web.authentication.logout.LogoutFilter@12d35bc9, org.springframework.security.oauth2.provider.client.ClientCredentialsTokenEndpointFilter@7891cf3, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7944c323, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1253b822, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@305289b3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3a917017, org.springframework.security.web.session.SessionManagementFilter@7074da1d, org.springframework.security.web.access.ExceptionTranslationFilter@6c9e74f3, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@20723ee]
+2022-07-10 17:53:46.871 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure org.springframework.security.oauth2.config.annotation.web.configuration.ResourceServerConfiguration$NotOAuthRequestMatcher@2ae5580 with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4203529f, org.springframework.security.web.context.SecurityContextPersistenceFilter@4fbc516f, org.springframework.security.web.header.HeaderWriterFilter@2a21cbe7, org.springframework.security.web.authentication.logout.LogoutFilter@15d0b458, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@18b30951, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1acc768, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@25765a49, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7d82ca56, org.springframework.security.web.session.SessionManagementFilter@3bb4c2b2, org.springframework.security.web.access.ExceptionTranslationFilter@7097d921, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6b278b17]
+2022-07-10 17:53:46.877 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@78b8f818, org.springframework.security.web.context.SecurityContextPersistenceFilter@1b5f960a, org.springframework.security.web.header.HeaderWriterFilter@36eb8e07, org.springframework.security.web.authentication.logout.LogoutFilter@51172948, indi.deeservent.nightcrow.api.security.filter.ValidateCodeFilter@2abc55c4, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6f2a3b37, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@53ddabc6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@39ac8c0c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1e9d721, org.springframework.security.web.session.SessionManagementFilter@3df6494f, org.springframework.security.web.access.ExceptionTranslationFilter@ba86c53, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@40c0437f]
+2022-07-10 17:53:48.204 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-07-10 17:53:48.231 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/nightcrow'
+2022-07-10 17:53:48.262 [main] INFO  indi.deeservent.nightcrow.api.ServerApplication - Started ServerApplication in 6.371 seconds (JVM running for 7.113)
+2022-07-10 17:53:53.382 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/nightcrow] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-10 17:53:53.383 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-07-10 17:53:53.386 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2022-07-10 17:54:13.919 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2022-07-10 17:54:13.933 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2022-07-10 17:54:26.197 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+2022-07-10 17:54:26.210 [main] INFO  indi.deeservent.nightcrow.api.ServerApplication - Starting ServerApplication using Java 1.8.0_321 on DeeserventMacBook-Pro.local with PID 73782 (/Users/deeservent/dev/dzw_work/nightcrow/nightcrow-api/target/classes started by deeservent in /Users/deeservent/dev/dzw_work/nightcrow)
+2022-07-10 17:54:26.211 [main] INFO  indi.deeservent.nightcrow.api.ServerApplication - The following profiles are active: prod
+2022-07-10 17:54:27.303 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-07-10 17:54:27.307 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-07-10 17:54:27.375 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 59 ms. Found 0 Redis repository interfaces.
+2022-07-10 17:54:27.798 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@18b74ea' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-10 17:54:27.803 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-10 17:54:28.116 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-07-10 17:54:28.123 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-07-10 17:54:28.124 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-07-10 17:54:28.124 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+2022-07-10 17:54:28.183 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/nightcrow] - Initializing Spring embedded WebApplicationContext
+2022-07-10 17:54:28.184 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1910 ms
+2022-07-10 17:54:28.570 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2022-07-10 17:54:29.206 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2022-07-10 17:54:31.944 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-07-10 17:54:31.967 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/nightcrow'
+2022-07-10 17:54:31.981 [main] INFO  indi.deeservent.nightcrow.api.ServerApplication - Started ServerApplication in 6.317 seconds (JVM running for 6.922)
+2022-07-10 17:54:36.341 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/nightcrow] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-10 17:54:36.344 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-07-10 17:54:36.348 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2022-07-10 17:58:37.723 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2022-07-10 17:58:37.736 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2022-07-10 17:58:44.814 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+2022-07-10 17:58:44.827 [main] INFO  indi.deeservent.nightcrow.api.ServerApplication - Starting ServerApplication using Java 1.8.0_321 on DeeserventMacBook-Pro.local with PID 74067 (/Users/deeservent/dev/dzw_work/nightcrow/nightcrow-api/target/classes started by deeservent in /Users/deeservent/dev/dzw_work/nightcrow)
+2022-07-10 17:58:44.828 [main] INFO  indi.deeservent.nightcrow.api.ServerApplication - The following profiles are active: prod
+2022-07-10 17:58:45.909 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-07-10 17:58:45.913 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-07-10 17:58:45.960 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 39 ms. Found 0 Redis repository interfaces.
+2022-07-10 17:58:46.412 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@441fbe89' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-10 17:58:46.417 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-10 17:58:46.731 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-07-10 17:58:46.739 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-07-10 17:58:46.739 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-07-10 17:58:46.740 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+2022-07-10 17:58:46.801 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/nightcrow] - Initializing Spring embedded WebApplicationContext
+2022-07-10 17:58:46.802 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1920 ms
+2022-07-10 17:58:47.194 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2022-07-10 17:58:47.829 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2022-07-10 17:58:50.764 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-07-10 17:58:50.789 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/nightcrow'
+2022-07-10 17:58:50.803 [main] INFO  indi.deeservent.nightcrow.api.ServerApplication - Started ServerApplication in 6.544 seconds (JVM running for 7.15)
+2022-07-10 17:59:10.078 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/nightcrow] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-10 17:59:10.080 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-07-10 17:59:10.082 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2022-07-10 18:01:40.961 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+2022-07-10 18:01:40.978 [main] INFO  indi.deeservent.nightcrow.api.ServerApplication - Starting ServerApplication using Java 1.8.0_321 on DeeserventMacBook-Pro.local with PID 74266 (/Users/deeservent/dev/dzw_work/nightcrow/nightcrow-api/target/classes started by deeservent in /Users/deeservent/dev/dzw_work/nightcrow)
+2022-07-10 18:01:40.978 [main] INFO  indi.deeservent.nightcrow.api.ServerApplication - The following profiles are active: prod
+2022-07-10 18:01:42.143 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-07-10 18:01:42.146 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-07-10 18:01:42.198 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 42 ms. Found 0 Redis repository interfaces.
+2022-07-10 18:01:42.612 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@27abb6ca' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-10 18:01:42.617 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-10 18:01:42.926 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-07-10 18:01:42.934 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-07-10 18:01:42.935 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-07-10 18:01:42.935 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+2022-07-10 18:01:42.993 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/nightcrow] - Initializing Spring embedded WebApplicationContext
+2022-07-10 18:01:42.993 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1939 ms
+2022-07-10 18:01:43.425 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2022-07-10 18:01:44.032 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2022-07-10 18:01:46.963 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-07-10 18:01:46.987 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/nightcrow'
+2022-07-10 18:01:47.000 [main] INFO  indi.deeservent.nightcrow.api.ServerApplication - Started ServerApplication in 6.577 seconds (JVM running for 7.205)
+2022-07-10 18:01:49.001 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/nightcrow] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-10 18:01:49.002 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-07-10 18:01:49.003 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2022-07-10 18:02:01.183 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2022-07-10 18:02:01.193 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2022-07-10 18:04:09.691 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+2022-07-10 18:04:09.693 [main] INFO  indi.deeservent.nightcrow.api.ServerApplication - Starting ServerApplication using Java 1.8.0_321 on DeeserventMacBook-Pro.local with PID 74554 (/Users/deeservent/dev/dzw_work/nightcrow/nightcrow-api/target/classes started by deeservent in /Users/deeservent/dev/dzw_work/nightcrow)
+2022-07-10 18:04:09.694 [main] INFO  indi.deeservent.nightcrow.api.ServerApplication - The following profiles are active: prod
+2022-07-10 18:04:10.769 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-07-10 18:04:10.773 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-07-10 18:04:10.822 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 39 ms. Found 0 Redis repository interfaces.
+2022-07-10 18:04:11.290 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@748ac6f3' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-10 18:04:11.295 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-10 18:04:11.628 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-07-10 18:04:11.636 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-07-10 18:04:11.637 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-07-10 18:04:11.637 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+2022-07-10 18:04:11.702 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/nightcrow] - Initializing Spring embedded WebApplicationContext
+2022-07-10 18:04:11.704 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1965 ms
+2022-07-10 18:04:12.121 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2022-07-10 18:04:12.826 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2022-07-10 18:04:15.806 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-07-10 18:04:15.830 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/nightcrow'
+2022-07-10 18:04:15.844 [main] INFO  indi.deeservent.nightcrow.api.ServerApplication - Started ServerApplication in 6.705 seconds (JVM running for 7.36)
+2022-07-10 18:04:20.023 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/nightcrow] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-10 18:04:20.026 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-07-10 18:04:20.028 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2022-07-10 18:06:20.804 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2022-07-10 18:06:20.813 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2022-07-10 18:06:28.883 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+2022-07-10 18:06:28.894 [main] INFO  indi.deeservent.nightcrow.api.ServerApplication - Starting ServerApplication using Java 1.8.0_321 on DeeserventMacBook-Pro.local with PID 74725 (/Users/deeservent/dev/dzw_work/nightcrow/nightcrow-api/target/classes started by deeservent in /Users/deeservent/dev/dzw_work/nightcrow)
+2022-07-10 18:06:28.895 [main] INFO  indi.deeservent.nightcrow.api.ServerApplication - The following profiles are active: prod
+2022-07-10 18:06:29.958 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-07-10 18:06:29.961 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-07-10 18:06:30.024 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 53 ms. Found 0 Redis repository interfaces.
+2022-07-10 18:06:30.464 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@70c69586' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-10 18:06:30.468 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-10 18:06:30.787 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-07-10 18:06:30.795 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-07-10 18:06:30.795 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-07-10 18:06:30.795 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+2022-07-10 18:06:30.852 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/nightcrow] - Initializing Spring embedded WebApplicationContext
+2022-07-10 18:06:30.853 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1909 ms
+2022-07-10 18:06:31.240 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2022-07-10 18:06:31.868 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2022-07-10 18:06:34.648 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-07-10 18:06:34.674 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/nightcrow'
+2022-07-10 18:06:34.702 [main] INFO  indi.deeservent.nightcrow.api.ServerApplication - Started ServerApplication in 6.367 seconds (JVM running for 6.996)
+2022-07-10 18:06:37.984 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/nightcrow] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-10 18:06:37.985 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-07-10 18:06:37.989 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2022-07-10 18:06:37.995 [http-nio-8080-exec-1] INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for GET '/':
+
+org.apache.catalina.connector.RequestFacade@35e1f7c2
+
+servletPath:/
+pathInfo:null
+headers: 
+host: localhost:8080
+connection: keep-alive
+cache-control: max-age=0
+sec-ch-ua: ".Not/A)Brand";v="99", "Google Chrome";v="103", "Chromium";v="103"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "macOS"
+upgrade-insecure-requests: 1
+user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
+accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+sec-fetch-site: same-origin
+sec-fetch-mode: navigate
+sec-fetch-user: ?1
+sec-fetch-dest: document
+accept-encoding: gzip, deflate, br
+accept-language: zh-CN,zh;q=0.9
+
+
+Security filter chain: [
+  WebAsyncManagerIntegrationFilter
+  SecurityContextPersistenceFilter
+  HeaderWriterFilter
+  LogoutFilter
+  OAuth2AuthenticationProcessingFilter
+  RequestCacheAwareFilter
+  SecurityContextHolderAwareRequestFilter
+  AnonymousAuthenticationFilter
+  SessionManagementFilter
+  ExceptionTranslationFilter
+  FilterSecurityInterceptor
+]
+
+
+************************************************************
+
+
+2022-07-10 18:06:38.086 [http-nio-8080-exec-2] INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for GET '/ui/assets/index.7dbf36e3.css':
+
+org.apache.catalina.connector.RequestFacade@5bd8c281
+
+servletPath:/ui/assets/index.7dbf36e3.css
+pathInfo:null
+headers: 
+host: localhost:8080
+connection: keep-alive
+sec-ch-ua: ".Not/A)Brand";v="99", "Google Chrome";v="103", "Chromium";v="103"
+sec-ch-ua-mobile: ?0
+user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
+sec-ch-ua-platform: "macOS"
+accept: text/css,*/*;q=0.1
+sec-fetch-site: same-origin
+sec-fetch-mode: no-cors
+sec-fetch-dest: style
+referer: http://localhost:8080/nightcrow/
+accept-encoding: gzip, deflate, br
+accept-language: zh-CN,zh;q=0.9
+
+
+Security filter chain: [
+  WebAsyncManagerIntegrationFilter
+  SecurityContextPersistenceFilter
+  HeaderWriterFilter
+  LogoutFilter
+  OAuth2AuthenticationProcessingFilter
+  RequestCacheAwareFilter
+  SecurityContextHolderAwareRequestFilter
+  AnonymousAuthenticationFilter
+  SessionManagementFilter
+  ExceptionTranslationFilter
+  FilterSecurityInterceptor
+]
+
+
+************************************************************
+
+
+2022-07-10 18:06:38.086 [http-nio-8080-exec-1] INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for GET '/ui/assets/index.e23d4be8.js':
+
+org.apache.catalina.connector.RequestFacade@35e1f7c2
+
+servletPath:/ui/assets/index.e23d4be8.js
+pathInfo:null
+headers: 
+host: localhost:8080
+connection: keep-alive
+sec-ch-ua: ".Not/A)Brand";v="99", "Google Chrome";v="103", "Chromium";v="103"
+origin: http://localhost:8080
+sec-ch-ua-mobile: ?0
+user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
+sec-ch-ua-platform: "macOS"
+accept: */*
+sec-fetch-site: same-origin
+sec-fetch-mode: cors
+sec-fetch-dest: script
+referer: http://localhost:8080/nightcrow/
+accept-encoding: gzip, deflate, br
+accept-language: zh-CN,zh;q=0.9
+
+
+Security filter chain: [
+  WebAsyncManagerIntegrationFilter
+  SecurityContextPersistenceFilter
+  HeaderWriterFilter
+  LogoutFilter
+  OAuth2AuthenticationProcessingFilter
+  RequestCacheAwareFilter
+  SecurityContextHolderAwareRequestFilter
+  AnonymousAuthenticationFilter
+  SessionManagementFilter
+  ExceptionTranslationFilter
+  FilterSecurityInterceptor
+]
+
+
+************************************************************
+
+
+2022-07-10 18:06:38.168 [http-nio-8080-exec-6] INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for GET '/ui/assets/button.bf396f0a.js':
+
+org.apache.catalina.connector.RequestFacade@4e4f2ff3
+
+servletPath:/ui/assets/button.bf396f0a.js
+pathInfo:null
+headers: 
+host: localhost:8080
+connection: keep-alive
+sec-ch-ua: ".Not/A)Brand";v="99", "Google Chrome";v="103", "Chromium";v="103"
+origin: http://localhost:8080
+sec-ch-ua-mobile: ?0
+user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
+sec-ch-ua-platform: "macOS"
+accept: */*
+sec-fetch-site: same-origin
+sec-fetch-mode: cors
+sec-fetch-dest: script
+accept-encoding: gzip, deflate, br
+accept-language: zh-CN,zh;q=0.9
+
+
+Security filter chain: [
+  WebAsyncManagerIntegrationFilter
+  SecurityContextPersistenceFilter
+  HeaderWriterFilter
+  LogoutFilter
+  OAuth2AuthenticationProcessingFilter
+  RequestCacheAwareFilter
+  SecurityContextHolderAwareRequestFilter
+  AnonymousAuthenticationFilter
+  SessionManagementFilter
+  ExceptionTranslationFilter
+  FilterSecurityInterceptor
+]
+
+
+************************************************************
+
+
+2022-07-10 18:06:38.168 [http-nio-8080-exec-5] INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for GET '/ui/assets/form-item.4ffcf52c.css':
+
+org.apache.catalina.connector.RequestFacade@51bd7c3c
+
+servletPath:/ui/assets/form-item.4ffcf52c.css
+pathInfo:null
+headers: 
+host: localhost:8080
+connection: keep-alive
+sec-ch-ua: ".Not/A)Brand";v="99", "Google Chrome";v="103", "Chromium";v="103"
+sec-ch-ua-mobile: ?0
+user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
+sec-ch-ua-platform: "macOS"
+accept: text/css,*/*;q=0.1
+sec-fetch-site: same-origin
+sec-fetch-mode: no-cors
+sec-fetch-dest: style
+referer: http://localhost:8080/nightcrow/
+accept-encoding: gzip, deflate, br
+accept-language: zh-CN,zh;q=0.9
+
+
+Security filter chain: [
+  WebAsyncManagerIntegrationFilter
+  SecurityContextPersistenceFilter
+  HeaderWriterFilter
+  LogoutFilter
+  OAuth2AuthenticationProcessingFilter
+  RequestCacheAwareFilter
+  SecurityContextHolderAwareRequestFilter
+  AnonymousAuthenticationFilter
+  SessionManagementFilter
+  ExceptionTranslationFilter
+  FilterSecurityInterceptor
+]
+
+
+************************************************************
+
+
+2022-07-10 18:06:38.168 [http-nio-8080-exec-3] INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for GET '/ui/assets/login.233d419b.js':
+
+org.apache.catalina.connector.RequestFacade@35e1f7c2
+
+servletPath:/ui/assets/login.233d419b.js
+pathInfo:null
+headers: 
+host: localhost:8080
+connection: keep-alive
+sec-ch-ua: ".Not/A)Brand";v="99", "Google Chrome";v="103", "Chromium";v="103"
+origin: http://localhost:8080
+sec-ch-ua-mobile: ?0
+user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
+sec-ch-ua-platform: "macOS"
+accept: */*
+sec-fetch-site: same-origin
+sec-fetch-mode: cors
+sec-fetch-dest: script
+accept-encoding: gzip, deflate, br
+accept-language: zh-CN,zh;q=0.9
+
+
+Security filter chain: [
+  WebAsyncManagerIntegrationFilter
+  SecurityContextPersistenceFilter
+  HeaderWriterFilter
+  LogoutFilter
+  OAuth2AuthenticationProcessingFilter
+  RequestCacheAwareFilter
+  SecurityContextHolderAwareRequestFilter
+  AnonymousAuthenticationFilter
+  SessionManagementFilter
+  ExceptionTranslationFilter
+  FilterSecurityInterceptor
+]
+
+
+************************************************************
+
+
+2022-07-10 18:06:38.171 [http-nio-8080-exec-7] INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for GET '/ui/assets/form-item.9342e334.js':
+
+org.apache.catalina.connector.RequestFacade@2e308176
+
+servletPath:/ui/assets/form-item.9342e334.js
+pathInfo:null
+headers: 
+host: localhost:8080
+connection: keep-alive
+sec-ch-ua: ".Not/A)Brand";v="99", "Google Chrome";v="103", "Chromium";v="103"
+origin: http://localhost:8080
+sec-ch-ua-mobile: ?0
+user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
+sec-ch-ua-platform: "macOS"
+accept: */*
+sec-fetch-site: same-origin
+sec-fetch-mode: cors
+sec-fetch-dest: script
+accept-encoding: gzip, deflate, br
+accept-language: zh-CN,zh;q=0.9
+
+
+Security filter chain: [
+  WebAsyncManagerIntegrationFilter
+  SecurityContextPersistenceFilter
+  HeaderWriterFilter
+  LogoutFilter
+  OAuth2AuthenticationProcessingFilter
+  RequestCacheAwareFilter
+  SecurityContextHolderAwareRequestFilter
+  AnonymousAuthenticationFilter
+  SessionManagementFilter
+  ExceptionTranslationFilter
+  FilterSecurityInterceptor
+]
+
+
+************************************************************
+
+
+2022-07-10 18:06:38.171 [http-nio-8080-exec-4] INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for GET '/ui/assets/login.6e9c6ee1.css':
+
+org.apache.catalina.connector.RequestFacade@5bd8c281
+
+servletPath:/ui/assets/login.6e9c6ee1.css
+pathInfo:null
+headers: 
+host: localhost:8080
+connection: keep-alive
+sec-ch-ua: ".Not/A)Brand";v="99", "Google Chrome";v="103", "Chromium";v="103"
+sec-ch-ua-mobile: ?0
+user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
+sec-ch-ua-platform: "macOS"
+accept: text/css,*/*;q=0.1
+sec-fetch-site: same-origin
+sec-fetch-mode: no-cors
+sec-fetch-dest: style
+referer: http://localhost:8080/nightcrow/
+accept-encoding: gzip, deflate, br
+accept-language: zh-CN,zh;q=0.9
+
+
+Security filter chain: [
+  WebAsyncManagerIntegrationFilter
+  SecurityContextPersistenceFilter
+  HeaderWriterFilter
+  LogoutFilter
+  OAuth2AuthenticationProcessingFilter
+  RequestCacheAwareFilter
+  SecurityContextHolderAwareRequestFilter
+  AnonymousAuthenticationFilter
+  SessionManagementFilter
+  ExceptionTranslationFilter
+  FilterSecurityInterceptor
+]
+
+
+************************************************************
+
+
+2022-07-10 18:06:38.171 [http-nio-8080-exec-8] INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for GET '/ui/assets/button.273aba0e.css':
+
+org.apache.catalina.connector.RequestFacade@4219705d
+
+servletPath:/ui/assets/button.273aba0e.css
+pathInfo:null
+headers: 
+host: localhost:8080
+connection: keep-alive
+sec-ch-ua: ".Not/A)Brand";v="99", "Google Chrome";v="103", "Chromium";v="103"
+sec-ch-ua-mobile: ?0
+user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
+sec-ch-ua-platform: "macOS"
+accept: text/css,*/*;q=0.1
+sec-fetch-site: same-origin
+sec-fetch-mode: no-cors
+sec-fetch-dest: style
+referer: http://localhost:8080/nightcrow/
+accept-encoding: gzip, deflate, br
+accept-language: zh-CN,zh;q=0.9
+
+
+Security filter chain: [
+  WebAsyncManagerIntegrationFilter
+  SecurityContextPersistenceFilter
+  HeaderWriterFilter
+  LogoutFilter
+  OAuth2AuthenticationProcessingFilter
+  RequestCacheAwareFilter
+  SecurityContextHolderAwareRequestFilter
+  AnonymousAuthenticationFilter
+  SessionManagementFilter
+  ExceptionTranslationFilter
+  FilterSecurityInterceptor
+]
+
+
+************************************************************
+
+
+2022-07-10 18:06:38.210 [http-nio-8080-exec-4] INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for GET '/ui/assets/index.d6f1172e.js':
+
+org.apache.catalina.connector.RequestFacade@5bd8c281
+
+servletPath:/ui/assets/index.d6f1172e.js
+pathInfo:null
+headers: 
+host: localhost:8080
+connection: keep-alive
+sec-ch-ua: ".Not/A)Brand";v="99", "Google Chrome";v="103", "Chromium";v="103"
+origin: http://localhost:8080
+sec-ch-ua-mobile: ?0
+user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
+sec-ch-ua-platform: "macOS"
+accept: */*
+sec-fetch-site: same-origin
+sec-fetch-mode: cors
+sec-fetch-dest: script
+accept-encoding: gzip, deflate, br
+accept-language: zh-CN,zh;q=0.9
+
+
+Security filter chain: [
+  WebAsyncManagerIntegrationFilter
+  SecurityContextPersistenceFilter
+  HeaderWriterFilter
+  LogoutFilter
+  OAuth2AuthenticationProcessingFilter
+  RequestCacheAwareFilter
+  SecurityContextHolderAwareRequestFilter
+  AnonymousAuthenticationFilter
+  SessionManagementFilter
+  ExceptionTranslationFilter
+  FilterSecurityInterceptor
+]
+
+
+************************************************************
+
+
+2022-07-10 18:06:38.210 [http-nio-8080-exec-3] INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for GET '/ui/assets/plugin-vue_export-helper.21dcd24c.js':
+
+org.apache.catalina.connector.RequestFacade@35e1f7c2
+
+servletPath:/ui/assets/plugin-vue_export-helper.21dcd24c.js
+pathInfo:null
+headers: 
+host: localhost:8080
+connection: keep-alive
+sec-ch-ua: ".Not/A)Brand";v="99", "Google Chrome";v="103", "Chromium";v="103"
+origin: http://localhost:8080
+sec-ch-ua-mobile: ?0
+user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
+sec-ch-ua-platform: "macOS"
+accept: */*
+sec-fetch-site: same-origin
+sec-fetch-mode: cors
+sec-fetch-dest: script
+accept-encoding: gzip, deflate, br
+accept-language: zh-CN,zh;q=0.9
+
+
+Security filter chain: [
+  WebAsyncManagerIntegrationFilter
+  SecurityContextPersistenceFilter
+  HeaderWriterFilter
+  LogoutFilter
+  OAuth2AuthenticationProcessingFilter
+  RequestCacheAwareFilter
+  SecurityContextHolderAwareRequestFilter
+  AnonymousAuthenticationFilter
+  SessionManagementFilter
+  ExceptionTranslationFilter
+  FilterSecurityInterceptor
+]
+
+
+************************************************************
+
+
+2022-07-10 18:06:38.244 [http-nio-8080-exec-9] INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for GET '/ui/assets/login.691d3205.png':
+
+org.apache.catalina.connector.RequestFacade@35e1f7c2
+
+servletPath:/ui/assets/login.691d3205.png
+pathInfo:null
+headers: 
+host: localhost:8080
+connection: keep-alive
+sec-ch-ua: ".Not/A)Brand";v="99", "Google Chrome";v="103", "Chromium";v="103"
+sec-ch-ua-mobile: ?0
+user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
+sec-ch-ua-platform: "macOS"
+accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+sec-fetch-site: same-origin
+sec-fetch-mode: no-cors
+sec-fetch-dest: image
+referer: http://localhost:8080/nightcrow/
+accept-encoding: gzip, deflate, br
+accept-language: zh-CN,zh;q=0.9
+
+
+Security filter chain: [
+  WebAsyncManagerIntegrationFilter
+  SecurityContextPersistenceFilter
+  HeaderWriterFilter
+  LogoutFilter
+  OAuth2AuthenticationProcessingFilter
+  RequestCacheAwareFilter
+  SecurityContextHolderAwareRequestFilter
+  AnonymousAuthenticationFilter
+  SessionManagementFilter
+  ExceptionTranslationFilter
+  FilterSecurityInterceptor
+]
+
+
+************************************************************
+
+
+2022-07-10 18:06:38.259 [http-nio-8080-exec-10] INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for GET '/ui/favicon.ico':
+
+org.apache.catalina.connector.RequestFacade@35e1f7c2
+
+servletPath:/ui/favicon.ico
+pathInfo:null
+headers: 
+host: localhost:8080
+connection: keep-alive
+sec-ch-ua: ".Not/A)Brand";v="99", "Google Chrome";v="103", "Chromium";v="103"
+sec-ch-ua-mobile: ?0
+user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
+sec-ch-ua-platform: "macOS"
+accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+sec-fetch-site: same-origin
+sec-fetch-mode: no-cors
+sec-fetch-dest: image
+referer: http://localhost:8080/nightcrow/
+accept-encoding: gzip, deflate, br
+accept-language: zh-CN,zh;q=0.9
+
+
+Security filter chain: [
+  WebAsyncManagerIntegrationFilter
+  SecurityContextPersistenceFilter
+  HeaderWriterFilter
+  LogoutFilter
+  OAuth2AuthenticationProcessingFilter
+  RequestCacheAwareFilter
+  SecurityContextHolderAwareRequestFilter
+  AnonymousAuthenticationFilter
+  SessionManagementFilter
+  ExceptionTranslationFilter
+  FilterSecurityInterceptor
+]
+
+
+************************************************************
+
+
+2022-07-10 18:10:42.741 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2022-07-10 18:10:42.754 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
